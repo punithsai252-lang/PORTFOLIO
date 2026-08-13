@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Punith Sai| Portfolio</title>
+<title>Gitta Punith Sai Madhav | Portfolio</title>
 
 <style>
     *{
         margin:0;
         padding:0;
         box-sizing:border-box;
-        font-family: 'Segoe UI', sans-serif;
+        font-family:'Segoe UI', sans-serif;
     }
 
     body{
-        background: linear-gradient(to right, #e3f2fd, #f3e5f5);
+        background:linear-gradient(to right, #e3f2fd, #f3e5f5);
         color:#333;
     }
 
@@ -104,6 +104,22 @@
         background:#bbdefb;
     }
 
+    /* CONTACT LINKS */
+    #contact a{
+        color:#5e239d;
+        text-decoration:none;
+        font-size:18px;
+    }
+
+    #contact a:hover{
+        text-decoration:underline;
+        color:#0d47a1;
+    }
+
+    .contact-item{
+        margin-bottom:10px;
+    }
+
     footer{
         text-align:center;
         padding:15px;
@@ -117,6 +133,15 @@
         section{
             width:95%;
         }
+
+        nav a{
+            margin:0 8px;
+            font-size:14px;
+        }
+
+        .hero h1{
+            font-size:25px;
+        }
     }
 
 </style>
@@ -124,14 +149,13 @@
 
 <body>
 
-
-
 <!-- HERO -->
 <div class="hero">
     <img src="phot" alt="Profile Photo">
     <h1>Gitta Punith Sai Madhav</h1>
     <p>B.Tech Student | Java Developer | AI & ML Enthusiast</p>
 </div>
+
 <!-- NAVIGATION -->
 <nav>
     <a href="#about">About</a>
@@ -145,9 +169,10 @@
 <section id="about">
     <h2>About Me</h2>
     <p>
-        I am a B.Tech student passionate about programming, data structures, 
-        and artificial intelligence. I enjoy solving problems using Java and 
-        working on machine learning projects like pothole detection using MobileNet and YOLO.
+        I am a B.Tech student passionate about programming, data structures,
+        and artificial intelligence. I enjoy solving problems using Java and
+        working on machine learning projects like pothole detection using
+        MobileNet and YOLO.
     </p>
 </section>
 
@@ -167,51 +192,99 @@
 <section id="projects">
     <h2>Projects</h2>
     <ul>
-        <li><b>Pothole Detection System:</b> Used MobileNet V2 and YOLO for real-time road damage detection.</li>
-        <li><b>Data Structures Implementation:</b> Implemented Stack, Queue, Linked List, Merge Sort in Java.</li>
-        <li><b>Student Management System:</b> Console-based Java application for managing student records.</li>
+        <li>
+            <b>Pothole Detection System:</b>
+            Used MobileNet V2 and YOLO for real-time road damage detection.
+        </li>
+
+        <li>
+            <b>Data Structures Implementation:</b>
+            Implemented Stack, Queue, Linked List, Merge Sort in Java.
+        </li>
+
+        <li>
+            <b>Student Management System:</b>
+            Console-based Java application for managing student records.
+        </li>
     </ul>
 </section>
+
 <!-- EDUCATION -->
 <section id="education">
     <h2>Education</h2>
+
     <table>
-        
+
         <tr>
             <th>Degree</th>
             <th>Institution</th>
             <th>Year</th>
             <th>CGPA</th>
         </tr>
+
         <tr>
-            <td>B.Tech (AI&DS)</td>
-            <td>Kl University</td>
+            <td>B.Tech (AI & DS)</td>
+            <td>KL University</td>
             <td>2025-2029</td>
-            <td>9.0 </td>
+            <td>9.0</td>
         </tr>
+
         <tr>
             <td>Intermediate</td>
             <td>Resonance Junior College</td>
             <td>2023-2025</td>
             <td>961</td>
         </tr>
+
         <tr>
             <td>School</td>
             <td>Institution</td>
             <td>2008-2023</td>
             <td>75%</td>
         </tr>
+
     </table>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
+
     <h2>Contact</h2>
-    <p>Email: punithsai252@gmail.com</p>
-    <p>LinkedIn: linkedin.com/in/yourprofile</p>
-    <p>GitHub: https://github.com/punithsai252-lang</p>
+
+    <div class="contact-item">
+        <p>Email:</p>
+
+        <!-- Email Link -->
+        <a href="mailto:punithsai252@gmail.com">
+            punithsai252@gmail.com
+        </a>
+    </div>
+
+    <div class="contact-item">
+        <p>LinkedIn:</p>
+
+        <!-- LinkedIn Link -->
+        <a href="https://www.linkedin.com/in/yourprofile"
+           target="_blank"
+           rel="noopener noreferrer">
+            LinkedIn Profile
+        </a>
+    </div>
+
+    <div class="contact-item">
+        <p>GitHub:</p>
+
+        <!-- GitHub Link -->
+        <a href="https://github.com/punithsai252-lang"
+           target="_blank"
+           rel="noopener noreferrer">
+            GitHub Profile
+        </a>
+    </div>
+
 </section>
 
+<!-- FOOTER -->
 <footer>
     © 2026 Gitta Punith Sai Madhav | Portfolio
 </footer>
