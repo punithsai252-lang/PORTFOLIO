@@ -1,308 +1,295 @@
-# 🌐 Punith Sai — Personal Portfolio
+# Gitta Punith Sai Madhav — Personal Portfolio
 
-A simple, responsive personal portfolio website built using **HTML5 and CSS3**.
-The website showcases my profile, technical skills, projects, education, and contact information.
+A modern, responsive personal portfolio website built with **HTML, CSS, and JavaScript**.  
+The portfolio presents my academic background, technical skills, projects, certifications, and contact information in a clean classic-style design.
 
----
+## 🌐 Live Portfolio
+
+After deployment, add your live website URL here:
+
+```text
+https://your-username.github.io/your-repository-name/
+```
 
 ## 📌 About the Project
 
-This portfolio website is designed to provide an overview of my academic background, programming skills, projects, and interests in **Artificial Intelligence and Machine Learning**.
+This portfolio was created to showcase my profile as a **B.Tech Artificial Intelligence & Data Science student** and to provide recruiters, lecturers, and collaborators with an easy way to view my technical skills and projects.
 
-The website uses a clean and simple interface with:
+The design uses a classic **navy, cream, and gold** color palette with support for both light and dark modes.
 
-* Navigation menu
-* Profile section
-* About Me section
-* Skills section
-* Projects section
-* Education table
-* Contact information
-* Responsive design for smaller screens
+## ✨ Features
 
----
+- Responsive design for desktop, tablet, and mobile
+- Classic professional portfolio theme
+- Light/Dark mode toggle
+- Smooth navigation between sections
+- Hero section with introduction
+- About Me section
+- Technical Skills section
+- Featured Projects section
+- Education timeline
+- Certifications section
+- Contact information
+- Contact form using `mailto`
+- Download Resume button
+- GitHub and LinkedIn links
+- Hover animations and visual effects
+- No external CSS framework required
 
 ## 🛠️ Technologies Used
 
-* **HTML5** — Website structure and content
-* **CSS3** — Styling, layout, colors, shadows, and responsiveness
-* **Responsive Web Design** — Media queries for mobile devices
-
----
+| Technology | Purpose |
+|---|---|
+| HTML5 | Website structure |
+| CSS3 | Styling, responsive layout, animations |
+| JavaScript | Dark/light mode and contact form |
+| LocalStorage | Saving the selected theme |
+| GitHub | Version control and deployment |
 
 ## 📂 Project Structure
 
 ```text
-Portfolio/
+portfolio/
 │
 ├── index.html
-├── phot
+├── resume.pdf
 └── README.md
 ```
 
-### Files Description
+### Files
 
-| File         | Description                         |
-| ------------ | ----------------------------------- |
-| `index.html` | Main portfolio webpage              |
-| `phot`       | Profile image used in the portfolio |
-| `README.md`  | Project documentation               |
+- `index.html` — Main portfolio website containing HTML, CSS, and JavaScript.
+- `resume.pdf` — Resume linked from the portfolio.
+- `README.md` — Project documentation.
 
-> **Note:** Rename the profile image to something like `profile.jpg` or `profile.png` and update the image path in `index.html`.
+> The profile photo is not required because the photo section has been removed from the current version.
 
----
+## 🧑‍💻 Portfolio Sections
 
-## ✨ Features
+### 1. Home
 
-### 1. Navigation Bar
+Introduces:
 
-The navigation bar provides links to different sections of the portfolio:
+- Name
+- Degree
+- Career interests
+- Short professional summary
+- Projects button
+- Resume button
 
-* About
-* Skills
-* Projects
-* Education
-* Contact
+### 2. About Me
 
-The links use HTML section IDs to navigate within the same webpage.
+Provides information about my academic background, interests, and career goals.
 
----
+### 3. Technical Skills
 
-### 2. Hero Section
+The portfolio highlights skills including:
 
-The hero section displays:
+- Java
+- Python
+- JavaScript
+- HTML5
+- CSS3
+- React
+- Data Structures & Algorithms
+- Machine Learning
+- YOLO
+- MobileNet
+- Computer Vision
 
-* Profile photo
-* Full name
-* Professional/academic description
+### 4. Projects
 
-Example:
+The portfolio currently showcases:
+
+#### Pothole Detection System
+
+A computer vision project focused on detecting potholes and road damage using deep learning.
+
+**Technologies:**
+
+- Python
+- YOLO
+- MobileNet V2
+- Computer Vision
+
+#### Data Structures Library
+
+Java implementations of commonly used data structures and algorithms.
+
+**Technologies:**
+
+- Java
+- Data Structures
+- Algorithms
+- OOP
+
+#### Student Management System
+
+A Java-based application for managing student information and performing record operations.
+
+**Technologies:**
+
+- Java
+- OOP
+- File Handling
+
+## 🎓 Education
+
+The portfolio includes:
+
+- **B.Tech — Artificial Intelligence & Data Science**
+- **KL University**
+- 2025–2029
+
+It also includes intermediate and school education details.
+
+## 📜 Certifications
+
+A dedicated certification section is included.
+
+Replace the placeholder certification information with your actual:
+
+- Certificate name
+- Issuing organization
+- Completion year
+- Certificate URL, if available
+
+## 📬 Contact Form
+
+The contact form collects:
+
+- Name
+- Email
+- Subject
+- Message
+
+When submitted, JavaScript creates a `mailto` link that opens the user's default email application.
+
+The current recipient email is:
 
 ```text
+punithsai252@gmail.com
+```
+
+### Important
+
+The current form is a **client-side mailto form**. It does not store messages on a server.
+
+For a fully online form that works without an installed email application, a form service such as Formspree, Netlify Forms, or Web3Forms can be integrated later.
+
+## 🌙 Dark / Light Mode
+
+The website includes a theme toggle button.
+
+The selected theme is saved using browser `localStorage`, so the user's theme preference remains after refreshing the page.
+
+## 🚀 How to Run Locally
+
+### Step 1 — Download or clone the repository
+
+```bash
+git clone https://github.com/punithsai252-lang/your-repository-name.git
+```
+
+### Step 2 — Open the project
+
+```bash
+cd your-repository-name
+```
+
+### Step 3 — Open `index.html`
+
+You can simply double-click `index.html` or open it with a browser.
+
+For development, you can also use the **Live Server** extension in Visual Studio Code.
+
+## 🌍 Deploy on GitHub Pages
+
+1. Create a GitHub repository.
+2. Upload:
+   - `index.html`
+   - `resume.pdf`
+   - `README.md`
+3. Open the repository's **Settings**.
+4. Go to **Pages**.
+5. Select the deployment source/branch containing `index.html`.
+6. Save the settings.
+7. GitHub will provide your public portfolio URL.
+
+After deployment, update the **Live Portfolio** section of this README with the actual URL.
+
+## ⚙️ Customization
+
+### Change your name
+
+Search for:
+
+```html
 Gitta Punith Sai Madhav
-B.Tech Student | Java Developer | AI & ML Enthusiast
 ```
 
----
+and replace it with your preferred name.
 
-### 3. About Me
+### Change your email
 
-The About Me section provides a brief introduction and describes interests in:
-
-* Programming
-* Data Structures
-* Artificial Intelligence
-* Machine Learning
-* Computer Vision
-
----
-
-### 4. Skills
-
-The portfolio currently includes the following skills:
-
-* Java Programming
-* Data Structures & Algorithms
-* HTML & CSS
-* Machine Learning Basics
-* MobileNet & YOLO
-* Computer Vision
-
----
-
-### 5. Projects
-
-The Projects section highlights three projects:
-
-#### 🚧 Pothole Detection System
-
-A computer vision project using **MobileNet V2 and YOLO** for real-time road damage detection.
-
-#### 💻 Data Structures Implementation
-
-Java implementations of common data structures and algorithms such as:
-
-* Stack
-* Queue
-* Linked List
-* Merge Sort
-
-#### 🎓 Student Management System
-
-A console-based Java application designed to manage student records.
-
----
-
-### 6. Education
-
-The education section uses an HTML table to display:
-
-* Degree
-* Institution
-* Year
-* CGPA/Percentage
-
-Current educational details include:
-
-| Degree           | Institution              | Year      |
-| ---------------- | ------------------------ | --------- |
-| B.Tech (AI & DS) | KL University            | 2025–2029 |
-| Intermediate     | Resonance Junior College | 2023–2025 |
-| School           | Institution              | 2008–2023 |
-
----
-
-### 7. Contact
-
-The Contact section provides links/details for:
-
-* Email
-* LinkedIn
-* GitHub
-
-GitHub:
+Search for:
 
 ```text
-https://github.com/punithsai252-lang
+punithsai252@gmail.com
 ```
 
----
+and replace it with your email address.
 
-## 🎨 Design Features
+### Add your LinkedIn
 
-The website uses a modern and simple visual design.
+Replace the placeholder LinkedIn URL:
 
-### Background
-
-A gradient background is applied to the main page:
-
-```css
-background: linear-gradient(to right, #e3f2fd, #f3e5f5);
+```html
+https://www.linkedin.com/
 ```
 
-### Navigation
+with your actual LinkedIn profile URL.
 
-The navigation bar uses a dark blue background:
+### Add project GitHub links
 
-```css
-background: #0d47a1;
+Replace the current GitHub profile links with the individual repository links for each project.
+
+### Update certifications
+
+Replace the placeholder certification information with your real certificates.
+
+### Update resume
+
+Replace:
+
+```text
+resume.pdf
 ```
 
-### Cards/Sections
-
-Each content section is displayed inside a white card with:
-
-* Rounded corners
-* Padding
-* Box shadow
-* Centered layout
-
-### Profile Image
-
-The profile image is displayed as a circular image using:
-
-```css
-border-radius: 50%;
-```
-
----
+with your latest resume file while keeping the filename or updating the HTML link accordingly.
 
 ## 📱 Responsive Design
 
-The website includes a CSS media query for smaller devices.
+The website is designed to adapt to:
 
-```css
-@media(max-width:768px){
-    section{
-        width:95%;
-    }
-}
-```
+- Desktop computers
+- Laptops
+- Tablets
+- Mobile phones
 
-This allows the content sections to use more screen width on mobile and tablet devices.
+CSS media queries automatically adjust navigation, grids, typography, and spacing for smaller screens.
 
----
+## 🔐 Privacy
 
-## 🚀 How to Run the Project
+This project does not contain a backend database or server-side authentication.
 
-### Step 1: Download or Clone the Project
+The contact form uses the visitor's local email application through a `mailto` link.
 
-Download the project files to your computer.
+## 📄 License
 
-### Step 2: Open the Project Folder
+This project is intended primarily as a personal portfolio.
 
-Open the folder containing:
-
-```text
-index.html
-```
-
-### Step 3: Add Your Profile Image
-
-Place your profile image in the same folder.
-
-For example:
-
-```text
-profile.jpg
-```
-
-Then change:
-
-```html
-<img src="phot" alt="Profile Photo">
-```
-
-to:
-
-```html
-<img src="profile.jpg" alt="Profile Photo">
-```
-
-### Step 4: Open the Website
-
-Double-click `index.html`.
-
-The portfolio will open in your default web browser.
-
----
-
-## 🔗 GitHub Deployment
-
-The portfolio can also be hosted using **GitHub Pages**.
-
-Basic process:
-
-1. Create a GitHub repository.
-2. Upload `index.html` and your image.
-3. Go to repository **Settings**.
-4. Select **Pages**.
-5. Select the appropriate branch.
-6. Save the settings.
-7. GitHub will provide a public website URL.
-
----
-
-## 🔮 Future Improvements
-
-The portfolio can be enhanced by adding:
-
-* [ ] Downloadable Resume
-* [ ] GitHub project links
-* [ ] LinkedIn profile link
-* [ ] Project screenshots
-* [ ] Project details pages
-* [ ] JavaScript animations
-* [ ] Dark mode
-* [ ] Contact form
-* [ ] Social media icons
-* [ ] Skill progress bars
-* [ ] Certifications section
-* [ ] Achievements section
-* [ ] Responsive mobile navigation
-* [ ] Custom domain
-
----
+You are welcome to use the structure and ideas for learning, but replace the personal information, projects, links, and content with your own details.
 
 ## 👨‍💻 Author
 
@@ -310,23 +297,13 @@ The portfolio can be enhanced by adding:
 
 B.Tech — Artificial Intelligence & Data Science
 
-Interests:
+### Connect
 
-* Java Development
-* Data Structures & Algorithms
-* Artificial Intelligence
-* Machine Learning
-* Computer Vision
-* Web Development
+- GitHub: `https://github.com/punithsai252-lang`
+- Email: `punithsai252@gmail.com`
 
 ---
 
-## 📄 License
+⭐ If you find this portfolio useful, consider giving the repository a star!
 
-This project is created for **personal portfolio and educational purposes**.
-
-You are free to modify and customize the design according to your requirements.
-
----
-
-⭐ **If you like this portfolio, consider giving the project a star on GitHub!**
+**Built with HTML, CSS & JavaScript.**
