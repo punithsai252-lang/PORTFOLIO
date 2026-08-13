@@ -1,0 +1,671 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Punith Sai Madhav G | Classic Resume</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navy: #1f2f46;
+            --gold: #b08a4a;
+            --dark-gold: #8f6c32;
+            --cream: #f5f0e6;
+            --paper: #fffdf8;
+            --text: #26313d;
+            --muted: #687585;
+            --border: #d8c9aa;
+        }
+
+        body {
+            background: var(--cream);
+            color: var(--text);
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.6;
+        }
+
+        /* Main Resume */
+        .resume {
+            width: 850px;
+            max-width: 95%;
+            margin: 40px auto;
+            background: var(--paper);
+            padding: 55px 65px;
+            box-shadow: 0 10px 35px rgba(40, 35, 25, 0.15);
+            border-top: 8px solid var(--navy);
+            position: relative;
+        }
+
+        /* Decorative Gold Line */
+        .gold-line {
+            height: 3px;
+            background: var(--gold);
+            width: 90px;
+            margin: 12px auto 0;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding-bottom: 25px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header h1 {
+            font-size: 36px;
+            color: var(--navy);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 7px;
+        }
+
+        .header .subtitle {
+            color: var(--dark-gold);
+            font-size: 15px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        .contact {
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            color: var(--muted);
+            line-height: 1.8;
+        }
+
+        .contact span {
+            margin: 0 6px;
+        }
+
+        /* Sections */
+        .section {
+            margin-top: 28px;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--navy);
+            font-size: 19px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 16px;
+        }
+
+        .section-title::before {
+            content: "";
+            width: 5px;
+            height: 25px;
+            background: var(--gold);
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: "";
+            height: 1px;
+            flex: 1;
+            background: var(--border);
+        }
+
+        /* Personal Details */
+        .details {
+            display: grid;
+            grid-template-columns: 160px 1fr;
+            row-gap: 9px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .details .label {
+            color: var(--navy);
+            font-weight: bold;
+        }
+
+        .details .value {
+            color: #444;
+        }
+
+        /* Objective */
+        .objective {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #4d5864;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        /* Education */
+        .education-card {
+            background: #faf7f0;
+            border-left: 5px solid var(--gold);
+            padding: 17px 20px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 12px rgba(50, 45, 35, 0.06);
+        }
+
+        .education-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .education-card h3 {
+            font-size: 18px;
+            color: var(--navy);
+            margin-bottom: 4px;
+        }
+
+        .education-card .institution {
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: #28456d;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .education-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 22px;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .education-info strong {
+            color: var(--dark-gold);
+        }
+
+        /* Skills */
+        .skills {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 9px 35px;
+            list-style: none;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .skills li {
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .skills li::before {
+            content: "◆";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--gold);
+            font-size: 9px;
+        }
+
+        /* Projects */
+        .project {
+            margin-bottom: 16px;
+            padding-left: 15px;
+            border-left: 2px solid var(--border);
+        }
+
+        .project:last-child {
+            margin-bottom: 0;
+        }
+
+        .project h3 {
+            color: var(--navy);
+            font-size: 17px;
+            margin-bottom: 4px;
+        }
+
+        .project p {
+            font-family: Arial, sans-serif;
+            color: #555f69;
+            font-size: 13px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        /* Strengths */
+        .strengths {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+        }
+
+        .strength {
+            border: 1px solid var(--border);
+            padding: 6px 13px;
+            color: var(--navy);
+            background: #faf7f0;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+        }
+
+        /* Declaration */
+        .declaration {
+            font-family: Arial, sans-serif;
+            color: #555f69;
+            font-size: 13px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 38px;
+            padding-top: 18px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            color: var(--muted);
+        }
+
+        .signature {
+            text-align: right;
+            color: var(--navy);
+            font-weight: bold;
+        }
+
+        /* Print Button */
+        .print-btn {
+            display: block;
+            margin: 25px auto 40px;
+            padding: 11px 28px;
+            background: var(--navy);
+            color: white;
+            border: none;
+            border-bottom: 3px solid var(--gold);
+            font-family: Georgia, serif;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .print-btn:hover {
+            background: #314765;
+        }
+
+        /* Responsive */
+        @media (max-width: 700px) {
+
+            .resume {
+                padding: 35px 25px;
+                margin: 20px auto;
+            }
+
+            .header h1 {
+                font-size: 27px;
+            }
+
+            .contact span {
+                display: block;
+            }
+
+            .details {
+                grid-template-columns: 1fr;
+                row-gap: 2px;
+                margin-bottom: 10px;
+            }
+
+            .details .label {
+                margin-top: 8px;
+            }
+
+            .skills {
+                grid-template-columns: 1fr;
+            }
+
+            .education-info {
+                flex-direction: column;
+                gap: 3px;
+            }
+
+            .footer {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .signature {
+                text-align: left;
+            }
+        }
+
+        /* Print / PDF */
+        @media print {
+
+            @page {
+                size: A4;
+                margin: 12mm;
+            }
+
+            body {
+                background: white;
+            }
+
+            .resume {
+                width: 100%;
+                max-width: 100%;
+                margin: 0;
+                padding: 25px 35px;
+                box-shadow: none;
+                border-top: 6px solid var(--navy);
+            }
+
+            .print-btn {
+                display: none;
+            }
+
+            .section {
+                break-inside: avoid;
+            }
+
+            .education-card {
+                break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <h1>Punith Sai Madhav G</h1>
+
+        <div class="subtitle">
+            B.Tech — Artificial Intelligence & Data Science
+        </div>
+
+        <div class="contact">
+            <span>+91 8179944028</span> |
+            <span>punithsai252@gmail.com</span>
+            <br>
+            <span>8-2-269/19/398/A</span>
+        </div>
+
+        <div class="gold-line"></div>
+
+    </header>
+
+
+    <!-- PERSONAL DETAILS -->
+    <section class="section">
+
+        <h2 class="section-title">
+            Personal Details
+        </h2>
+
+        <div class="details">
+
+            <div class="label">Full Name</div>
+            <div class="value">Punith Sai Madhav G</div>
+
+            <div class="label">Date of Birth</div>
+            <div class="value">10th October 2007</div>
+
+            <div class="label">Place of Birth</div>
+            <div class="value">India</div>
+
+            <div class="label">Address</div>
+            <div class="value">8-2-269/19/398/A</div>
+
+            <div class="label">Phone</div>
+            <div class="value">+91 8179944028</div>
+
+            <div class="label">Email</div>
+            <div class="value">punithsai252@gmail.com</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CAREER OBJECTIVE -->
+    <section class="section">
+
+        <h2 class="section-title">
+            Career Objective
+        </h2>
+
+        <p class="objective">
+            A motivated B.Tech student specializing in Artificial Intelligence
+            and Data Science, seeking opportunities to develop strong technical
+            and professional skills. Passionate about learning modern
+            technologies, solving challenging problems, building practical
+            projects, and contributing effectively to a professional
+            organization.
+        </p>
+
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section class="section">
+
+        <h2 class="section-title">
+            Education
+        </h2>
+
+
+        <!-- B.Tech -->
+        <div class="education-card">
+
+            <h3>
+                B.Tech — Artificial Intelligence & Data Science
+            </h3>
+
+            <div class="institution">
+                KL University
+            </div>
+
+            <div class="education-info">
+
+                <span>
+                    <strong>Duration:</strong> 2025 – 2029
+                </span>
+
+                <span>
+                    <strong>CGPA:</strong> 9.0
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- Intermediate -->
+        <div class="education-card">
+
+            <h3>
+                Intermediate
+            </h3>
+
+            <div class="institution">
+                Resonance Junior College
+            </div>
+
+            <div class="education-info">
+
+                <span>
+                    <strong>Duration:</strong> 2023 – 2025
+                </span>
+
+                <span>
+                    <strong>Score:</strong> 961
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- School -->
+        <div class="education-card">
+
+            <h3>
+                School Education
+            </h3>
+
+            <div class="institution">
+                Secondary Education
+            </div>
+
+            <div class="education-info">
+
+                <span>
+                    <strong>Duration:</strong> 2008 – 2023
+                </span>
+
+                <span>
+                    <strong>Percentage:</strong> 75%
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECHNICAL SKILLS -->
+    <section class="section">
+
+        <h2 class="section-title">
+            Technical Skills
+        </h2>
+
+        <ul class="skills">
+
+            <li>HTML & CSS</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>SQL</li>
+            <li>Git & GitHub</li>
+            <li>Data Structures & Algorithms</li>
+
+        </ul>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="section">
+
+        <h2 class="section-title">
+            Projects
+        </h2>
+
+
+        <div class="project">
+
+            <h3>
+                Personal Portfolio Website
+            </h3>
+
+            <p>
+                Designed and developed a responsive personal portfolio
+                website using HTML and CSS to present personal information,
+                education, technical skills, projects, and contact details
+                through a clean and professional interface.
+            </p>
+
+        </div>
+
+
+        <div class="project">
+
+            <h3>
+                Web Development Projects
+            </h3>
+
+            <p>
+                Developed multiple web-based projects using HTML, CSS,
+                JavaScript and React, focusing on responsive layouts,
+                user-friendly interfaces, and clean design principles.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- STRENGTHS -->
+    <section class="section">
+
+        <h2 class="section-title">
+            Strengths
+        </h2>
+
+        <div class="strengths">
+
+            <span class="strength">Quick Learner</span>
+            <span class="strength">Problem Solving</span>
+            <span class="strength">Teamwork</span>
+            <span class="strength">Time Management</span>
+            <span class="strength">Adaptability</span>
+            <span class="strength">Self-Motivated</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- DECLARATION -->
+    <section class="section">
+
+        <h2 class="section-title">
+            Declaration
+        </h2>
+
+        <p class="declaration">
+            I hereby declare that the information provided above is true
+            and correct to the best of my knowledge and belief.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div>
+            <strong>Place:</strong> India
+            <br>
+            <strong>Date:</strong> ______________
+        </div>
+
+        <div class="signature">
+            Punith Sai Madhav G
+            <br>
+            <span style="font-weight: normal;">Signature</span>
+        </div>
+
+    </footer>
+
+</div>
+
+
+<button class="print-btn" onclick="window.print()">
+    Print / Save as PDF
+</button>
+
+
+</body>
+</html>
+
