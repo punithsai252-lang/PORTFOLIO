@@ -1,309 +1,333 @@
-# Gitta Punith Sai Madhav — Personal Portfolio
+# Classic Resume --- Punith Sai Madhav G
 
-A modern, responsive personal portfolio website built with **HTML, CSS, and JavaScript**.  
-The portfolio presents my academic background, technical skills, projects, certifications, and contact information in a clean classic-style design.
+A clean, responsive, classic-style personal resume website built using
+**HTML and CSS**, with a **Download Resume** button that generates an A4
+PDF.
 
-## 🌐 Live Portfolio
+## 📌 Project Overview
 
-After deployment, add your live website URL here:
+This project is a personal resume webpage for **Punith Sai Madhav G**, a
+B.Tech student specializing in **Artificial Intelligence & Data
+Science**.
 
-```text
-https://your-username.github.io/your-repository-name/
-```
+The resume uses a traditional professional design with:
 
-## 📌 About the Project
-
-This portfolio was created to showcase my profile as a **B.Tech Artificial Intelligence & Data Science student** and to provide recruiters, lecturers, and collaborators with an easy way to view my technical skills and projects.
-
-The design uses a classic **navy, cream, and gold** color palette with support for both light and dark modes.
+-   Navy blue and antique-gold colors
+-   Ivory/cream background
+-   Classic typography
+-   Clean section dividers
+-   Responsive layout
+-   Education cards
+-   Technical skills
+-   Projects
+-   Strengths
+-   Career objective
+-   Personal details
+-   Declaration
+-   PDF resume download functionality
 
 ## ✨ Features
 
-- Responsive design for desktop, tablet, and mobile
-- Classic professional portfolio theme
-- Light/Dark mode toggle
-- Smooth navigation between sections
-- Hero section with introduction
-- About Me section
-- Technical Skills section
-- Featured Projects section
-- Education timeline
-- Certifications section
-- Contact information
-- Contact form using `mailto`
-- Download Resume button
-- GitHub and LinkedIn links
-- Hover animations and visual effects
-- No external CSS framework required
+### 1. Classic Resume Design
+
+The resume uses a professional classic color palette:
+
+-   **Navy Blue** --- headings and borders
+-   **Antique Gold** --- decorative accents
+-   **Cream/Ivory** --- background and paper effect
+-   **Dark Gray** --- supporting text
+
+### 2. Personal Details
+
+The resume contains:
+
+-   Full Name
+-   Date of Birth
+-   Place of Birth
+-   Address
+-   Phone Number
+-   Email Address
+
+### 3. Education
+
+The education section includes:
+
+#### B.Tech --- Artificial Intelligence & Data Science
+
+-   Institution: KL University
+-   Duration: 2025 -- 2029
+-   CGPA: 9.0
+
+#### Intermediate
+
+-   Institution: Resonance Junior College
+-   Duration: 2023 -- 2025
+-   Score: 961
+
+#### School Education
+
+-   Secondary Education
+-   Duration: 2008 -- 2023
+-   Percentage: 75%
+
+### 4. Technical Skills
+
+The resume includes:
+
+-   HTML & CSS
+-   Java
+-   Python
+-   JavaScript
+-   React
+-   SQL
+-   Git & GitHub
+-   Data Structures & Algorithms
+
+### 5. Projects
+
+The project section contains:
+
+-   Personal Portfolio Website
+-   Web Development Projects
+
+### 6. Strengths
+
+The resume highlights:
+
+-   Quick Learner
+-   Problem Solving
+-   Teamwork
+-   Time Management
+-   Adaptability
+-   Self-Motivated
+
+### 7. Responsive Design
+
+The resume is designed to work on:
+
+-   Desktop
+-   Laptop
+-   Tablet
+-   Mobile
+
+The layout automatically adjusts for smaller screens.
+
+### 8. Download Resume as PDF
+
+The **Download Resume** button generates the resume as a PDF using the
+`html2pdf.js` library.
+
+The downloaded file is saved as:
+
+`Punith_Sai_Madhav_G_Resume.pdf`
+
+The PDF is configured for:
+
+-   A4 paper
+-   Portrait orientation
+-   High-quality rendering
 
 ## 🛠️ Technologies Used
 
-| Technology | Purpose |
-|---|---|
-| HTML5 | Website structure |
-| CSS3 | Styling, responsive layout, animations |
-| JavaScript | Dark/light mode and contact form |
-| LocalStorage | Saving the selected theme |
-| GitHub | Version control and deployment |
+  Technology    Purpose
+  ------------- -----------------------------------
+  HTML5         Resume structure
+  CSS3          Styling and responsive design
+  JavaScript    PDF download functionality
+  html2pdf.js   Converts the HTML resume into PDF
 
-## 📂 Project Structure
+## 📁 Project Structure
 
-```text
-portfolio/
+``` text
+classic-resume/
 │
-├── index.html
-├── resume.pdf
+├── resume.html
 └── README.md
 ```
 
-### Files
+## 🚀 How to Run
 
-- `index.html` — Main portfolio website containing HTML, CSS, and JavaScript.
-- `resume.pdf` — Resume linked from the portfolio.
-- `README.md` — Project documentation.
+### Step 1 --- Download or Clone the Project
 
-> The profile photo is not required because the photo section has been removed from the current version.
+Place the HTML file in a folder.
 
-## 🧑‍💻 Portfolio Sections
+### Step 2 --- Open the Resume
 
-### 1. Home
+Open:
 
-Introduces:
+``` text
+resume.html
+```
 
-- Name
-- Degree
-- Career interests
-- Short professional summary
-- Projects button
-- Resume button
+in any modern web browser.
 
-### 2. About Me
+Recommended browsers:
 
-Provides information about my academic background, interests, and career goals.
+-   Google Chrome
+-   Microsoft Edge
+-   Mozilla Firefox
+-   Safari
 
-### 3. Technical Skills
+### Step 3 --- Download the Resume
 
-The portfolio highlights skills including:
+Click the:
 
-- Java
-- Python
-- JavaScript
-- HTML5
-- CSS3
-- React
-- Data Structures & Algorithms
-- Machine Learning
-- YOLO
-- MobileNet
-- Computer Vision
+``` text
+Download Resume
+```
 
-### 4. Projects
+button.
 
-The portfolio currently showcases:
+The browser will generate and download the resume as a PDF.
 
-#### Pothole Detection System
+## 🖨️ Print / PDF Support
 
-A computer vision project focused on detecting potholes and road damage using deep learning.
+The resume also includes print-friendly CSS.
 
-**Technologies:**
+You can use the browser's:
 
-- Python
-- YOLO
-- MobileNet V2
-- Computer Vision
+``` text
+Print → Save as PDF
+```
 
-#### Data Structures Library
+option if required.
 
-Java implementations of commonly used data structures and algorithms.
+The print layout is optimized for **A4 paper**.
 
-**Technologies:**
+## 🎨 Customization
 
-- Java
-- Data Structures
-- Algorithms
-- OOP
+You can easily modify the resume by editing the HTML file.
 
-#### Student Management System
+### Change Name
 
-A Java-based application for managing student information and performing record operations.
+Find:
 
-**Technologies:**
+``` html
+<h1>Punith Sai Madhav G</h1>
+```
 
-- Java
-- OOP
-- File Handling
+and replace the name.
 
-## 🎓 Education
+### Change Contact Information
 
-The portfolio includes:
+Update:
 
-- **B.Tech — Artificial Intelligence & Data Science**
-- **KL University**
-- 2025–2029
-
-It also includes intermediate and school education details.
-
-## 📜 Certifications
-
-A dedicated certification section is included.
-
-Replace the placeholder certification information with your actual:
-
-- Certificate name
-- Issuing organization
-- Completion year
-- Certificate URL, if available
-
-## 📬 Contact Form
-
-The contact form collects:
-
-- Name
-- Email
-- Subject
-- Message
-
-When submitted, JavaScript creates a `mailto` link that opens the user's default email application.
-
-The current recipient email is:
-
-```text
+``` html
++91 8179944028
 punithsai252@gmail.com
+8-2-269/19/398/A
 ```
 
-### Important
+### Change Education
 
-The current form is a **client-side mailto form**. It does not store messages on a server.
+Update the content inside the:
 
-For a fully online form that works without an installed email application, a form service such as Formspree, Netlify Forms, or Web3Forms can be integrated later.
-
-## 🌙 Dark / Light Mode
-
-The website includes a theme toggle button.
-
-The selected theme is saved using browser `localStorage`, so the user's theme preference remains after refreshing the page.
-
-## 🚀 How to Run Locally
-
-### Step 1 — Download or clone the repository
-
-```bash
-git clone https://github.com/punithsai252-lang/your-repository-name.git
+``` html
+<section class="section">
 ```
 
-### Step 2 — Open the project
+Education section.
 
-```bash
-cd your-repository-name
+### Change Skills
+
+Add or remove skills from:
+
+``` html
+<ul class="skills">
 ```
 
-### Step 3 — Open `index.html`
+### Change Projects
 
-You can simply double-click `index.html` or open it with a browser.
+Edit the project information inside:
 
-For development, you can also use the **Live Server** extension in Visual Studio Code.
-
-## 🌍 Deploy on GitHub Pages
-
-1. Create a GitHub repository.
-2. Upload:
-   - `index.html`
-   - `resume.pdf`
-   - `README.md`
-3. Open the repository's **Settings**.
-4. Go to **Pages**.
-5. Select the deployment source/branch containing `index.html`.
-6. Save the settings.
-7. GitHub will provide your public portfolio URL.
-
-After deployment, update the **Live Portfolio** section of this README with the actual URL.
-
-## ⚙️ Customization
-
-### Change your name
-
-Search for:
-
-```html
-Gitta Punith Sai Madhav
+``` html
+<div class="project">
 ```
 
-and replace it with your preferred name.
+### Change Colors
 
-### Change your email
+The main colors are defined at the beginning of the CSS:
 
-Search for:
-
-```text
-punithsai252@gmail.com
+``` css
+:root {
+    --navy: #1f2f46;
+    --gold: #b08a4a;
+    --dark-gold: #8f6c32;
+    --cream: #f5f0e6;
+    --paper: #fffdf8;
+}
 ```
 
-and replace it with your email address.
+You can change these values to create your own color theme.
 
-### Add your LinkedIn
+## 📄 PDF Download Function
 
-Replace the placeholder LinkedIn URL:
+The project uses `html2pdf.js` to convert the resume container into a
+PDF.
 
-```html
-https://www.linkedin.com/
+The library is loaded using:
+
+``` html
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 ```
 
-with your actual LinkedIn profile URL.
+The JavaScript function creates an A4 portrait PDF and downloads it with
+the filename:
 
-### Add project GitHub links
-
-Replace the current GitHub profile links with the individual repository links for each project.
-
-### Update certifications
-
-Replace the placeholder certification information with your real certificates.
-
-### Update resume
-
-Replace:
-
-```text
-resume.pdf
+``` text
+Punith_Sai_Madhav_G_Resume.pdf
 ```
 
-with your latest resume file while keeping the filename or updating the HTML link accordingly.
+## 🌐 Internet Requirement
 
-## 📱 Responsive Design
+The webpage itself does not require a server and can be opened directly.
 
-The website is designed to adapt to:
+However, the PDF download feature loads `html2pdf.js` from a CDN, so an
+internet connection is recommended when using the download feature.
 
-- Desktop computers
-- Laptops
-- Tablets
-- Mobile phones
+## 📱 Browser Compatibility
 
-CSS media queries automatically adjust navigation, grids, typography, and spacing for smaller screens.
+The resume is designed for modern browsers that support:
 
-## 🔐 Privacy
+-   HTML5
+-   CSS3
+-   JavaScript
+-   CSS Grid
+-   CSS Flexbox
 
-This project does not contain a backend database or server-side authentication.
+## 🔒 Privacy
 
-The contact form uses the visitor's local email application through a `mailto` link.
+The resume contains personal information such as contact details.
 
-## 📄 License
-
-This project is intended primarily as a personal portfolio.
-
-You are welcome to use the structure and ideas for learning, but replace the personal information, projects, links, and content with your own details.
+If you publish this project on a public GitHub repository or website,
+consider whether you want your phone number and email address to be
+publicly visible.
 
 ## 👨‍💻 Author
 
-**Gitta Punith Sai Madhav**
+**Punith Sai Madhav G**
 
-B.Tech — Artificial Intelligence & Data Science
+B.Tech --- Artificial Intelligence & Data Science
 
-### Connect
+KL University
 
-- GitHub: `https://github.com/punithsai252-lang`
-- Email: `punithsai252@gmail.com`
+## 📜 License
 
----
+This project is intended for personal resume and portfolio use.
 
-⭐ If you find this portfolio useful, consider giving the repository a star!
+You may modify the design, content, colors, skills, projects, and other
+sections for your own use.
 
-**Built with HTML, CSS & JavaScript.**
+------------------------------------------------------------------------
+
+## ⭐ Final Notes
+
+This project combines a classic resume appearance with modern web
+functionality. It is suitable for:
+
+-   College applications
+-   Internship applications
+-   Job applications
+-   Portfolio websites
+-   Personal websites
+-   Resume PDF generation
